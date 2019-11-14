@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import '../main.dart';
 
 class HomePageView extends StatefulWidget {
   @override
@@ -82,6 +81,7 @@ class _HomePageViewState extends State<HomePageView> {
               children: <Widget>[
                 Expanded(
                   child: Container(
+                    color: Colors.black,
                     height: 75.0,
                     child: Row(
                       children: <Widget>[
@@ -92,6 +92,15 @@ class _HomePageViewState extends State<HomePageView> {
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(10),
                                 color: Colors.white,
+                              ),
+                              child: Row(
+                                children: <Widget>[
+                                  IconButton(
+                                    icon: Icon(
+                                      Icons.menu, color: Colors.black,),
+                                    onPressed: () {},
+                                  ),
+                                ],
                               ),
                             ),
                           ),
